@@ -18,8 +18,14 @@ predicted = clfr.predict(text_test_vectorized)
 
 st.title("Spam Classification App")
 st.image(r"text_image.png",use_column_width=True)
-st.text('Model Description: Naive Bayes Model, trained on text classification data to predict whether the text is '
-        'either \tPolitics\tSports\tTechnology\tEntertainment\tBusiness')
+st.text('Model Description: Naive Bayes Model, trained on text classification data')
+st.text('to predict if the provided text falls under one of the following categories:')
+st.text('Politics')
+st.text('Sports')
+st.text('Technology')
+st.text('Entertainment')
+st.text('Business')
+        
 text = st.text_input("Enter Text Here","Type Here...")
 predict = st.button('Predict')
 
